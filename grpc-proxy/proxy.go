@@ -27,7 +27,7 @@ import (
 
 type ContextDialer = func(context.Context, string) (net.Conn, error)
 
-type server struct {
+type Server struct {
 	serverOptions []grpc.ServerOption
 	grpcServer    *grpc.Server
 	logger        logrus.FieldLogger
@@ -51,9 +51,9 @@ type server struct {
 	listener net.Listener
 }
 
-func New(configurators ...Configurator) (*server, error) {
+func New(configurators ...Configurator) (*Server, error) {
 	logger := logrus.New()
-	s := &server{
+	s := &Server{
 		logger:           logger,
 		dialer:           proxydialer.NewProxyDialer(httpproxy.FromEnvironment().ProxyFunc()),
 		networkInterface: "localhost", // default to just localhost if no other interface is chosen
@@ -104,7 +104,7 @@ func New(configurators ...Configurator) (*server, error) {
 	return s, nil
 }
 
-func (s *server) Start() error {
+func (s *Server) Start() error {
 	var err error
 	s.listener, err = net.Listen("tcp", fmt.Sprintf("%s:%d", s.networkInterface, s.port))
 	if err != nil {

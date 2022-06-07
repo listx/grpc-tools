@@ -22,7 +22,7 @@ var proxyStreamDesc = &grpc.StreamDesc{
 }
 
 // Originally based on github.com/mwitkow/grpc-proxy/proxy/handler.go
-func (s *server) proxyHandler(srv interface{}, ss grpc.ServerStream) error {
+func (s *Server) proxyHandler(srv interface{}, ss grpc.ServerStream) error {
 	md, ok := metadata.FromIncomingContext(ss.Context())
 	if !ok {
 		return status.Error(codes.Unknown, "could not extract metadata from request")
@@ -95,7 +95,7 @@ func (s *server) proxyHandler(srv interface{}, ss grpc.ServerStream) error {
 	return status.Errorf(codes.Internal, "gRPC proxying should never reach this stage.")
 }
 
-func (s *server) calculateDestination(md metadata.MD) (string, error) {
+func (s *Server) calculateDestination(md metadata.MD) (string, error) {
 	authority := md.Get(":authority")
 	var destinationAddr string
 	switch {

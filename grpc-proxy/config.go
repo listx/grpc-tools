@@ -10,11 +10,11 @@ import (
 	"google.golang.org/grpc/status"
 )
 
-type Configurator func(*server)
+type Configurator func(*Server)
 
 // Deprecated: use WithServerOptions instead
 func WithOptions(options ...grpc.ServerOption) Configurator {
-	return func(s *server) {
+	return func(s *Server) {
 		s.serverOptions = append(s.serverOptions, options...)
 	}
 }
@@ -22,7 +22,7 @@ func WithOptions(options ...grpc.ServerOption) Configurator {
 // WithServerOptions allows you to supply a list of grpc.ServerOption
 // that will be passed to grpc.NewServer when creating the proxy.
 func WithServerOptions(options ...grpc.ServerOption) Configurator {
-	return func(s *server) {
+	return func(s *Server) {
 		s.serverOptions = append(s.serverOptions, options...)
 	}
 }
@@ -30,18 +30,18 @@ func WithServerOptions(options ...grpc.ServerOption) Configurator {
 // WithDialOptions allows you to supply a list of grpc.DialOption
 // that will be passed to grpc.Dial when dialing downstream servers.
 func WithDialOptions(options ...grpc.DialOption) Configurator {
-	return func(s *server) {
+	return func(s *Server) {
 		s.dialOptions = append(s.dialOptions, options...)
 	}
 }
 
 func WithInterceptor(interceptor grpc.StreamServerInterceptor) Configurator {
-	return func(s *server) {
+	return func(s *Server) {
 		s.serverOptions = append(s.serverOptions, grpc.StreamInterceptor(recoverWrapper(s, interceptor)))
 	}
 }
 
-func recoverWrapper(s *server, interceptor grpc.StreamServerInterceptor) grpc.StreamServerInterceptor {
+func recoverWrapper(s *Server, interceptor grpc.StreamServerInterceptor) grpc.StreamServerInterceptor {
 	return func(srv interface{}, ss grpc.ServerStream, info *grpc.StreamServerInfo, handler grpc.StreamHandler) (err error) {
 		defer func() {
 			if r := recover(); r != nil {
@@ -54,20 +54,20 @@ func recoverWrapper(s *server, interceptor grpc.StreamServerInterceptor) grpc.St
 }
 
 func UsingTLS(certFile, keyFile string) Configurator {
-	return func(s *server) {
+	return func(s *Server) {
 		s.certFile = certFile
 		s.keyFile = keyFile
 	}
 }
 
 func Port(port int) Configurator {
-	return func(s *server) {
+	return func(s *Server) {
 		s.port = port
 	}
 }
 
 func WithDialer(dialer ContextDialer) Configurator {
-	return func(s *server) {
+	return func(s *Server) {
 		s.dialer = dialer
 	}
 }
@@ -97,7 +97,7 @@ func RegisterDefaultFlags() {
 
 // This must be used after a call to flag.Parse()
 func DefaultFlags() Configurator {
-	return func(s *server) {
+	return func(s *Server) {
 		s.networkInterface = fNetworkInterface
 		s.port = fPort
 		s.certFile = fCertFile
