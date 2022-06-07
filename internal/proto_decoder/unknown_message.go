@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"regexp"
 
-	"github.com/bradleyjkemp/grpc-tools/internal"
+	"github.com/listx/grpc-tools/internal"
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/jhump/protoreflect/desc"

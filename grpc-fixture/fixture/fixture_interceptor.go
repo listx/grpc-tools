@@ -1,7 +1,7 @@
 package fixture
 
 import (
-	"github.com/bradleyjkemp/grpc-tools/internal"
+	"github.com/listx/grpc-tools/internal"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"

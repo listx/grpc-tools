@@ -1,7 +1,7 @@
 package proto_decoder
 
 import (
-	"github.com/bradleyjkemp/grpc-tools/internal"
+	"github.com/listx/grpc-tools/internal"
 	"github.com/sirupsen/logrus"
 )
 

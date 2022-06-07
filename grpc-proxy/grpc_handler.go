@@ -7,8 +7,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/bradleyjkemp/grpc-tools/internal/codec"
-	"github.com/bradleyjkemp/grpc-tools/internal/marker"
+	"github.com/listx/grpc-tools/internal/codec"
+	"github.com/listx/grpc-tools/internal/marker"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/credentials"

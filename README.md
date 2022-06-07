@@ -1,4 +1,4 @@
-# grpc-tools [![CircleCI](https://circleci.com/gh/bradleyjkemp/grpc-tools/tree/master.svg?style=svg)](https://circleci.com/gh/bradleyjkemp/grpc-tools/tree/master) [![GitHub release](https://img.shields.io/github/release/bradleyjkemp/grpc-tools.svg)](https://github.com/bradleyjkemp/grpc-tools/releases/latest)
+# grpc-tools [![CircleCI](https://circleci.com/gh/listx/grpc-tools/tree/master.svg?style=svg)](https://circleci.com/gh/listx/grpc-tools/tree/master) [![GitHub release](https://img.shields.io/github/release/listx/grpc-tools.svg)](https://github.com/listx/grpc-tools/releases/latest)
 
 A suite of tools for gRPC debugging and development. Like [Fiddler](https://www.telerik.com/fiddler)/[Charles](https://www.charlesproxy.com/) but for gRPC!
 
@@ -17,14 +17,14 @@ These tools are in alpha so expect breaking changes between releases. See the [c
 ### Installation:
 The recommended way to install these tools is via [Homebrew](https://brew.sh/) using:
 ```bash
-brew install bradleyjkemp/formulae/grpc-tools
+brew install listx/formulae/grpc-tools
 ```
 
-Alternatively, binaries can be downloaded from the GitHub [releases page](https://github.com/bradleyjkemp/grpc-tools/releases/latest).
+Alternatively, binaries can be downloaded from the GitHub [releases page](https://github.com/listx/grpc-tools/releases/latest).
 
 Or you can build the tools from source using:
 ```bash
-go install github.com/bradleyjkemp/grpc-tools/...
+go install github.com/listx/grpc-tools/...
 ```
 
 ## grpc-dump

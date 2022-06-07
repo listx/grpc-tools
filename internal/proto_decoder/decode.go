@@ -1,7 +1,7 @@
 package proto_decoder
 
 import (
-	"github.com/bradleyjkemp/grpc-tools/internal"
+	"github.com/listx/grpc-tools/internal"
 	"github.com/golang/protobuf/proto"
 	"github.com/jhump/protoreflect/desc"
 	"github.com/jhump/protoreflect/dynamic"

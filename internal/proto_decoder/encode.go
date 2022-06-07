@@ -3,7 +3,7 @@ package proto_decoder
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/bradleyjkemp/grpc-tools/internal"
+	"github.com/listx/grpc-tools/internal"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
 	"github.com/jhump/protoreflect/desc"

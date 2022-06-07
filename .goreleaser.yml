@@ -14,7 +14,7 @@ builds:
   goarch:
     - amd64
   ldflags:
-    - -s -w -X github.com/bradleyjkemp/grpc-tools/internal/versionflag.version={{.Version}}
+    - -s -w -X github.com/listx/grpc-tools/internal/versionflag.version={{.Version}}
   id: grpc-dump
   binary: grpc-dump
   main: ./grpc-dump
@@ -30,9 +30,9 @@ builds:
 brews:
 -
   github:
-    owner: bradleyjkemp
+    owner: listx
     name: homebrew-formulae
-  homepage: "https://github.com/bradleyjkemp/grpc-tools"
+  homepage: "https://github.com/listx/grpc-tools"
   description: "A suite of gRPC debugging tools. Like Fiddler/Charles but for gRPC."
 
 archives:

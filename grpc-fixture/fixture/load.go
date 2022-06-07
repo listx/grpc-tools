@@ -2,8 +2,8 @@ package fixture
 
 import (
 	"encoding/json"
-	"github.com/bradleyjkemp/grpc-tools/internal"
-	"github.com/bradleyjkemp/grpc-tools/internal/proto_decoder"
+	"github.com/listx/grpc-tools/internal"
+	"github.com/listx/grpc-tools/internal/proto_decoder"
 	"io"
 	"os"
 )

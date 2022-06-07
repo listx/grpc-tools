@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bradleyjkemp/grpc-tools/internal"
+	"github.com/listx/grpc-tools/internal"
 
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"

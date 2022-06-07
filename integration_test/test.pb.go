@@ -170,9 +170,9 @@ func (m *OuterWithExtra) GetExtraField() string {
 }
 
 func init() {
-	proto.RegisterType((*Outer)(nil), "bradleyjkemp.github.io.Outer")
-	proto.RegisterType((*Inner)(nil), "bradleyjkemp.github.io.Inner")
-	proto.RegisterType((*OuterWithExtra)(nil), "bradleyjkemp.github.io.OuterWithExtra")
+	proto.RegisterType((*Outer)(nil), "listx.github.io.Outer")
+	proto.RegisterType((*Inner)(nil), "listx.github.io.Inner")
+	proto.RegisterType((*OuterWithExtra)(nil), "listx.github.io.OuterWithExtra")
 }
 
 func init() { proto.RegisterFile("test.proto", fileDescriptor_c161fcfdc0c3ff1e) }

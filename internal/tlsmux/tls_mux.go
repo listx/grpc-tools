@@ -9,7 +9,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/bradleyjkemp/grpc-tools/internal/peekconn"
+	"github.com/listx/grpc-tools/internal/peekconn"
 	"github.com/sirupsen/logrus"
 )
 

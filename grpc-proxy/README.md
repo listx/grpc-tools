@@ -17,7 +17,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/bradleyjkemp/grpc-tools/grpc-proxy"
+	"github.com/listx/grpc-tools/grpc-proxy"
 	"google.golang.org/grpc"
 )
 

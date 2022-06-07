@@ -6,9 +6,9 @@ import (
 	"io"
 	"strings"
 
-	"github.com/bradleyjkemp/grpc-tools/internal"
-	"github.com/bradleyjkemp/grpc-tools/internal/proto_decoder"
-	"github.com/bradleyjkemp/grpc-tools/internal/proto_descriptor"
+	"github.com/listx/grpc-tools/internal"
+	"github.com/listx/grpc-tools/internal/proto_decoder"
+	"github.com/listx/grpc-tools/internal/proto_descriptor"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/jhump/protoreflect/desc"
 	"github.com/jhump/protoreflect/dynamic"

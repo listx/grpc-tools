@@ -2,8 +2,8 @@ package proto_decoder
 
 import (
 	"fmt"
-	"github.com/bradleyjkemp/grpc-tools/internal"
-	"github.com/bradleyjkemp/grpc-tools/internal/proto_descriptor"
+	"github.com/listx/grpc-tools/internal"
+	"github.com/listx/grpc-tools/internal/proto_descriptor"
 	"github.com/golang/protobuf/ptypes/empty"
 	"github.com/jhump/protoreflect/desc"
 	"github.com/jhump/protoreflect/desc/builder"

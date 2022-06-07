@@ -1,8 +1,8 @@
 package dump
 
 import (
-	"github.com/bradleyjkemp/grpc-tools/grpc-proxy"
-	"github.com/bradleyjkemp/grpc-tools/internal/proto_decoder"
+	"github.com/listx/grpc-tools/grpc-proxy"
+	"github.com/listx/grpc-tools/internal/proto_decoder"
 	"github.com/sirupsen/logrus"
 	"io"
 	"strings"

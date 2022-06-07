@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/bradleyjkemp/grpc-tools/grpc-dump/dump"
-	"github.com/bradleyjkemp/grpc-tools/grpc-proxy"
-	_ "github.com/bradleyjkemp/grpc-tools/internal/versionflag"
+	"github.com/listx/grpc-tools/grpc-dump/dump"
+	"github.com/listx/grpc-tools/grpc-proxy"
+	_ "github.com/listx/grpc-tools/internal/versionflag"
 	"os"
 )
 

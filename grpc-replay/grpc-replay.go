@@ -3,9 +3,9 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/bradleyjkemp/grpc-tools/grpc-replay/replay"
-	"github.com/bradleyjkemp/grpc-tools/internal/proxydialer"
-	_ "github.com/bradleyjkemp/grpc-tools/internal/versionflag"
+	"github.com/listx/grpc-tools/grpc-replay/replay"
+	"github.com/listx/grpc-tools/internal/proxydialer"
+	_ "github.com/listx/grpc-tools/internal/versionflag"
 	"golang.org/x/net/http/httpproxy"
 	"os"
 )

@@ -1,5 +1,5 @@
 syntax = "proto3";
-package bradleyjkemp.github.io;
+package listx.github.io;
 
 message Outer {
     Inner outer_value = 1;

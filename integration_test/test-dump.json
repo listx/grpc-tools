@@ -1,5 +1,5 @@
 {
-  "service": "bradleyjkemp.github.io.TestService",
+  "service": "listx.github.io.TestService",
   "method": "TestUnaryClientRequest",
   "messages": [
     {
@@ -13,7 +13,7 @@
   ],
   "metadata": {
     ":authority": [
-      "bradleyjkemp.github.io:444"
+      "listx.github.io:444"
     ],
     "content-type": [
       "application/grpc"
@@ -27,7 +27,7 @@
   }
 }
 {
-  "service": "bradleyjkemp.github.io.TestService",
+  "service": "listx.github.io.TestService",
   "method": "TestUnaryClientRequest",
   "messages": [
     {
@@ -42,7 +42,7 @@
   ],
   "metadata": {
     ":authority": [
-      "bradleyjkemp.github.io:444"
+      "listx.github.io:444"
     ],
     "content-type": [
       "application/grpc"
@@ -56,7 +56,7 @@
   }
 }
 {
-  "service": "bradleyjkemp.github.io.TestService",
+  "service": "listx.github.io.TestService",
   "method": "TestStreamingServerMessages",
   "messages": [
     {

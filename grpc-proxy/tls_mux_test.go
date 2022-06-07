@@ -12,11 +12,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bradleyjkemp/grpc-tools/testutils"
+	"github.com/listx/grpc-tools/testutils"
 
 	"golang.org/x/net/http2"
 
-	"github.com/bradleyjkemp/grpc-tools/internal/tlsmux"
+	"github.com/listx/grpc-tools/internal/tlsmux"
 	"github.com/sirupsen/logrus"
 	"github.com/stretchr/testify/require"
 )
