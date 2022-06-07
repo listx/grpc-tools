@@ -99,9 +99,9 @@ func (s *Server) calculateDestination(md metadata.MD) (string, error) {
 	authority := md.Get(":authority")
 	var destinationAddr string
 	switch {
-	case s.destination != "":
+	case s.Destination != "":
 		// used hardcoded destination if set (used by clients not supporting HTTP proxies)
-		destinationAddr = s.destination
+		destinationAddr = s.Destination
 
 	case len(authority) > 0:
 		// use authority from request

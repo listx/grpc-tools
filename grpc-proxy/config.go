@@ -62,7 +62,7 @@ func UsingTLS(certFile, keyFile string) Configurator {
 
 func Port(port int) Configurator {
 	return func(s *Server) {
-		s.port = port
+		s.Port = port
 	}
 }
 
@@ -99,10 +99,10 @@ func RegisterDefaultFlags() {
 func DefaultFlags() Configurator {
 	return func(s *Server) {
 		s.networkInterface = fNetworkInterface
-		s.port = fPort
+		s.Port = fPort
 		s.certFile = fCertFile
 		s.keyFile = fKeyFile
-		s.destination = fDestination
+		s.Destination = fDestination
 		s.enableSystemProxy = fEnableSystemProxy
 		s.tlsSecretsFile = fTLSSecretsFile
 	}
