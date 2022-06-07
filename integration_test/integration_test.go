@@ -5,7 +5,7 @@ package main
 import (
 	"bytes"
 	"fmt"
-	"github.com/listx/cupaloy/v2"
+	"github.com/bradleyjkemp/cupaloy/v2"
 	"github.com/listx/grpc-tools/grpc-dump/dump"
 	"github.com/listx/grpc-tools/grpc-fixture/fixture"
 	"github.com/listx/grpc-tools/grpc-proxy"
